@@ -1,16 +1,9 @@
 language: java
-jdk:
-  - oraclejdk8
-  - oraclejdk9
-  - openjdk8
 
+addons:
+  sonarcloud:
+    organization: "abdelhakimc"
 
-
-  addons:
-    sonarcloud:
-      organization: "abdelhakimc"
-
-
-  script:
-    # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
-    - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=abdelhakimc_ipi-java-350-ex
+script:
+  # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=abdelhakimc_ipi-java-350-ex
