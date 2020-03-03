@@ -79,6 +79,7 @@
 			<scope>test</scope>
 		</dependency>
 
+
 	</dependencies>
 
 	<build>
@@ -120,10 +121,10 @@
 				</dependencies>
 				<configuration>
 					<targetClasses>
-						<param>com.ipiecoles.java.java350.service*</param>
+						<param>com.ipiecoles.java.java350.*</param>
 					</targetClasses>
 					<targetTests>
-						<param>com.ipiecoles.java.java350.service*</param>
+						<param>com.ipiecoles.java.java350.*</param>
 					</targetTests>
 				</configuration>
 			</plugin>
